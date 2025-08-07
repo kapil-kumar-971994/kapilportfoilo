@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Kapil Kumar - Portfolio</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    /* Custom scrollbar for horizontal skills & tags */
+    ::-webkit-scrollbar {
+      height: 8px;
+      background: transparent;
+    }
+    ::-webkit-scrollbar-thumb {
+      background: #fca5a5; /* Light Red */
+      border-radius: 4px;
+    }
+    /* subtle focus outline */
+    a:focus-visible {
+      outline: 2px solid #fca5a5; /* Light Red */
+      outline-offset: 2px;
+    }
+    body {
+      background-color: #f0f9ff; /* Light Cyan */
+      color: #1e3a8a; /* Dark Blue for text */
+    }
+  </style>
+</head>
+<body class="bg-cyan-50 text-blue-900 font-sans antialiased">
+
+  <!-- NAVBAR -->
+  <header class="sticky top-0 z-50 bg-white shadow-md">
+    <nav class="max-w-7xl mx-auto px-6 lg:px-8">
+      <div class="flex justify-between h-16 items-center">
+        <div class="flex-shrink-0">
+          <a href="#home" class="font-extrabold text-lg text-red-600 focus:outline-none focus:ring-2 focus:ring-red-600 rounded">Kapil Kumar</a>
+        </div>
+        <ul class="hidden md:flex space-x-6 text-gray-600 text-sm font-medium">
+          <li><a href="#about" class="hover:text-red-600 focus:outline-none focus:ring-2 focus:ring-red-600 rounded">About</a></li>
+          <li><a href="#education" class="hover:text-red-600 focus:outline-none focus:ring-2 focus:ring-red-600 rounded">Education</a></li>
+          <li><a href="#projects" class="hover:text-red-600 focus:outline-none focus:ring-2 focus:ring-red-600 rounded">Projects</a></li>
+          <li><a href="#skills" class="hover:text-red-600 focus:outline-none focus:ring-2 focus:ring-red-600 rounded">Skills</a></li>
+          <li><a href="#contact" class="hover:text-red-600 focus:outline-none focus:ring-2 focus:ring-red-600 rounded">Contact</a></li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+
+  <!-- HOME SECTION -->
+  <section id="home" class="min-h-screen bg-gradient-to-tr from-red-400 to-blue-400 text-white flex flex-col justify-center items-center px-6 text-center">
+    <div class="max-w-xl">
+      <div class="mx-auto mb-6 w-36 h-36 rounded-full overflow-hidden border-4 border-red-500 shadow-lg">
+        <img src="PHOTO-2025-08-08-03-00-46.jpg" alt="Portrait photo of Kapil Kumar" class="object-cover w-full h-full" />
+      </div>
+      <h1 class="text-4xl font-extrabold mb-2 leading-tight">Kapil Kumar</h1>
+      <p class="text-xl font-light mb-4">Aspiring Data Engineer | Analyst</p>
+      <p class="max-w-lg mx-auto mb-8 text-base leading-relaxed font-normal text-red-200">
+        Passionate about data engineering and analytics with a strong foundation in Python, SQL, and cloud technologies.
+      </p>
+      <div class="flex justify-center gap-4">
+        <a href="#projects" class="px-6 py-3 bg-white text-red-600 font-semibold rounded-md shadow hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-red-600 transition duration-300">View My Projects</a>
+        <a href="#contact" class="px-6 py-3 border border-white rounded-md font-medium hover:bg-white hover:text-red-700 focus:outline-none focus:ring-2 focus:ring-white transition duration-300">Get In Touch</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ABOUT SECTION -->
+  <section id="about" class="py-20 px-6 max-w-7xl mx-auto bg-red-100 shadow-md rounded-lg mb-20">
+    <h2 class="text-3xl font-extrabold mb-6 text-center text-blue-900">About Me</h2>
+    <p class="text-center max-w-3xl mx-auto text-blue-700 mb-14 leading-relaxed">
+      I am an aspiring data engineer with a strong foundation in data analytics and engineering principles. Currently pursuing a Bachelor’s in Computer Applications, I have hands-on experience with data pipelines, big data tools, and analytics frameworks. I am eager to contribute to impactful projects and grow my skills in the industry.
+    </p>
+  </section>
+
+  <!-- EDUCATION SECTION -->
+  <section id="education" class="py-20 px-6 max-w-7xl mx-auto bg-off-white shadow-md rounded-lg mb-10">
+    <h2 class="text-3xl font-extrabold mb-6 text-center text-blue-900">Education</h2>
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-16 max-w-5xl mx-auto">
+      <div class="md:w-1/2 mb-10">
+        <div class="space-y-5">
+          <div class="pl-4 border-l-4 border-red-600">
+            <h4 class="font-semibold text-blue-900">Bachelor of Computer Applications (BCA)</h4>
+            <p class="text-sm text-gray-600">Sanskriti University, Mathura</p>
+            <p class="text-sm text-gray-500">2022 - 2025</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PROJECTS SECTION -->
+  <section id="projects" class="py-20 px-6 max-w-7xl mx-auto bg-off-white shadow-md rounded-lg mb-10">
+    <h2 class="text-3xl font-extrabold mb-6 text-center text-blue-900">Projects</h2>
+    <div class="md:w-1/2 mx-auto">
+      <div class="space-y-4 mb-12">
+        <div class="bg-red-50 p-4 rounded-lg">
+          <h4 class="font-semibold">End-to-End ETL Pipeline using Azure Databricks</h4>
+          <p class="text-sm text-gray-600">Developed an automated pipeline to extract, clean, transform, and load large CSV files using Databricks (PySpark).</p>
+        </div>
+        <div class="bg-red-50 p-4 rounded-lg">
+          <h4 class="font-semibold">Customer Retention Analysis</h4>
+          <p class="text-sm text-gray-600">Analyzed churn patterns using Python, implementing retention KPIs and visual insights for stakeholders.</p>
+        </div>
+        <div class="bg-red-50 p-4 rounded-lg">
+          <h4 class="font-semibold">SQL-Based Reporting Dashboard</h4>
+          <p class="text-sm text-gray-600">Created and optimized complex SQL queries to generate business reports from relational data.</p>
+        </div>
+        <div class="bg-red-50 p-4 rounded-lg">
+          <h4 class="font-semibold">Azure Blob Storage Integration App</h4>
+          <p class="text-sm text-gray-600">Wrote Python code to pull unstructured files from Azure Blob Storage and process them for further transformation.</p>
+        </div>
+        <div class="bg-red-50 p-4 rounded-lg">
+          <h4 class="font-semibold">Student Performance Analyzer</h4>
+          <p class="text-sm text-gray-600">Developed a tool to calculate class averages and performance bands using SQL and Python.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT SECTION -->
+  <section id="contact" class="py-20 px-6 max-w-7xl mx-auto bg-off-white shadow-md rounded-lg mb-10">
+    <h2 class="text-3xl font-extrabold mb-6 text-center text-blue-900">Get In Touch</h2>
+    <p class="text-center max-w-xl mx-auto mb-14 text-gray-600 leading-relaxed">Let's discuss opportunities and collaborate on exciting projects</p>
+
+    <form id="contactForm" class="max-w-lg mx-auto">
+      <div class="mb-4">
+        <label for="name" class="block text-gray-700">Name:</label>
+        <input type="text" id="name" name="name" required class="w-full p-2 border border-gray-300 rounded" />
+      </div>
+      <div class="mb-4">
+        <label for="email" class="block text-gray-700">Email:</label>
+        <input type="email" id="email" name="email" required class="w-full p-2 border border-gray-300 rounded" />
+      </div>
+      <div class="mb-4">
+        <label for="message" class="block text-gray-700">Message:</label>
+        <textarea id="message" name="message" required class="w-full p-2 border border-gray-300 rounded"></textarea>
+      </div>
+      <button type="submit" class="px-6 py-3 bg-red-600 text-white font-semibold rounded-md shadow hover:bg-red-700 focus:outline-none focus:ring-2 focus:ring-red-600 transition duration-300">Send</button>
+    </form>
+    <div id="formResponse" class="mt-4 text-center text-gray-700"></div>
+  </section>
+
+  <footer class="bg-[#fca5a5] py-10 text-blue-900 text-center">
+    <div class="max-w-7xl mx-auto px-6 flex flex-col items-center space-y-6">
+      <h1 class="text-2xl md:text-3xl font-bold text-blue-900">Kapil Kumar</h1>
+      <p class="text-lg md:text-xl text-blue-700">Aspiring Data Engineer | Analyst</p>
+      <p class="text-gray-600 mt-8 text-sm">&copy; 2023 Kapil Kumar. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script>
+    document.getElementById('contactForm').addEventListener('submit', function(event) {
+      event.preventDefault(); // Prevent the default form submission
+
+      // Get form data
+      const name = document.getElementById('name').value;
+      const email = document.getElementById('email').value;
+      const message = document.getElementById('message').value;
+
+      // Display a response message
+      const responseDiv = document.getElementById('formResponse');
+      responseDiv.innerHTML = `<p>Thank you, ${name}! Your message has been sent.</p>`;
+      
+      // Clear the form
+      document.getElementById('contactForm').reset();
+    });
+  </script>
+</body>
+</html>
